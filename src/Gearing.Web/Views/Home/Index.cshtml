@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" href="/Content/mike_shift.css" type="text/css" />
+	<script type="text/javascript" src="/Scripts/wz_jsgraphics.js"></script>
+	<script type="text/javascript" src="/Scripts/shift.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftInputs.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftReadDisplay.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftUpdateDisplay.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftGearChart.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftLogChart.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftSpeedChart.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftSpeedTable.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftSheldon.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftRollout.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftWheels.js"></script>
+	<script type="text/javascript" src="/Scripts/shiftCassettes.js"></script>
+</head>
+
+<body onload="initGears()">
+<form name="mainForm" action="/">
+
+	@Html.Partial("_Cog")
+	@Html.Partial("_Chainring")
+
+	<!-- program outputs -->
+
+	@Html.Partial("_GearTable")
+	@Html.Partial("_SemiLogGraph")
+	@Html.Partial("_SpeedRange")
+	@Html.Partial("_GainRatio")
+	@Html.Partial("_RollOut")
+	@Html.Partial("_Speed")
+
+	<!-- 	chart type ------------------------------ -->
+	<p>
+		Choose Chart type: 
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="typeButton" onclick="readDisplayType()"/>ASCII
+		<input type="radio" name="typeButton" onclick="readDisplayType()" checked="checked"/>Graphical
+	</p>
+
+	<!-- 	create the jsGraphics objects for each canvas  -->
+	<script type="text/javascript">
+	<!--
+
+		var grtbl = new jsGraphics("gtCanvas"); 			// gear table canvas
+		var logtbl = new jsGraphics("logCanvas"); 			// log graph canvas
+		var speedrtbl = new jsGraphics("speedRangeCanvas"); // speed range table canvas
+		var speedtbl = new jsGraphics("speedCanvas"); 		// speed table canvas
+		var gaintbl = new jsGraphics("gainCanvas"); 		// gain ration canvas
+		var rolltbl = new jsGraphics("rollCanvas"); 		// rollout table canvas
+
+	//-->
+	</script>
+</form>
+</body>
+</html>

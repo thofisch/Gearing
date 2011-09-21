@@ -1,0 +1,43 @@
+/* Style sheet for Mike Sherman 4/28/2009  for shift 3.1 */
+
+BODY, INPUT, SELECT
+		{ background: 	#CAE3FB; 
+	  	  font-family:	verdana ,sans-serif ;
+		  color:#000099
+		}
+
+A:link		{ color:	#0059DE; }	/* blue */
+
+A:visited	{ color: 	#705120; }	/* medium brown */
+
+/*A:active	{ color:	#FFCC00; }*/	/* brighter yellow */
+		/*{ font-weight: 	bold; }*/
+
+A:hover 	{ color:	#CF3E05; 	/* reder */
+		  text-decoration:underline overline;
+		  background-color:#FFCC00 }
+/*A:hover 	{ color:	#FF9900; }*/	/* gold */
+/*A:hover 	{ color:	#653209; }*/	/* dark brown */
+
+H1, H2, H3, H4, H5, H6	{color: #705120;
+			font-family: sans-serif }
+
+H1	{font-weight: bold;
+	 text-align: center;
+	 font-family: 'Gill Sans', Arial, sans-serif}
+
+TEXTAREA {
+	font-family: "Courier New",Courier,monospace;
+	padding: 0px; /* not a bit of breathing room*/
+	font-size: 14px;
+	color: #000099;  /*color: #000000; /* The text in black*/
+	background-color: #cae3fb; /* Background-color*/
+	border: solid 0px #ff9900; /* border*/
+}
+
+input.btn {
+  color:#004;
+  background-color: #eed;
+  border:2px solid;
+  border-color: #a98 #559 #005 #a98;  /* top right bottom left */
+}

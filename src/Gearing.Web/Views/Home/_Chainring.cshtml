@@ -1,0 +1,116 @@
+﻿<!-- beginning of chainring value table -->
+<table style="border: 1px solid black;">
+<tbody>
+	<tr>
+		<td colspan="3"><b>Chainrings</b></td>
+		<td><b>Wheel</b></td>
+		<td><b>Crank</b></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="ring0" size="2" value="24" onchange="readRings()"/></td>
+		<td><input type="text" name="ring1" size="2" value="36" onchange="readRings()"/></td>
+		<td><input type="text" name="ring2" size="2" value="46" onchange="readRings()"/></td>
+
+		<!-- beginning of wheel size selection -->
+		<td>
+			<!-- Largest used wheel value is ?? -->
+			<select name="wheel" onchange="readWheel()">
+				<option value="0" name="27 x 1 3/8">27 x 1 3/8</option>
+				<option value="1" name="27 x 1 1/4">27 x 1 1/4</option>
+				<option value="2" name="27 x 1 1/8">27 x 1 1/8</option>
+				<option value="3" name="27 x 1">27 x 1</option>
+				<option value="4" name="700 x 44">700 x 44</option>
+				<option value="5" name="700 x 38">700 x 38</option>
+				<option value="6" name="700 x 35">700 x 35</option>
+				<option value="7" name="700 x 32">700 x 32</option>
+				<option value="37" name="700 x 30">700 x 30</option>
+				<option selected="selected" value="8" name="700 x 28">700 x 28</option>
+				<option value="9" name="700 x 25">700 x 25</option>
+				<option value="35" name="700 x 23">700 x 23</option>
+				<option value="10" name="700 x 20">700 x 20</option>
+				<option value="34" name="20mm tubular">20mm tubular</option>
+				<option value="33" name="23mm tubular">23mm tubular</option>
+				<option value="11" name="25mm tubular">25mm tubular</option>
+				<option value="12" name="28mm tubular">28mm tubular</option>
+				<option value="13" name="650B x 40">650B x 40</option>
+				<option value="14" name="650B x 36">650B x 36</option>
+				<option value="15" name="650B x 33">650B x 33</option>
+				<option value="16" name="650B x 30">650B x 30	 </option>
+				<option value="30" name="29er x 1.9">29er x 1.9</option>
+				<option value="31" name="29er x 2.1">29er x 2.1</option>
+				<option value="32" name="29er x 2.2">29er x 2.2</option>
+				<option value="17" name="26 x 2.125">26 x 2.125</option>
+				<option value="18" name="26 x 1.9">26 x 1.9</option>
+				<option value="19" name="26 x 1.5">26 x 1.5</option>
+				<option value="20" name="26 x 1.25">26 x 1.25</option>
+				<option value="21" name="26 x 1.0 = 559mm">26 x 1.0 = 559mm</option>
+				<option value="22" name="650c">650c x 25</option>
+				<option value="23" name="26 x 1 3/8 = 590mm">26 x 1 3/8 = 590mm</option>
+				<option value="24" name="24">24</option>
+				<option value="25" name="24 x 1 = 520mm">24 x 1 = 520mm</option>
+				<option value="36" name="20 x 1.5 = 406mm">20 x 1.5 = 406mm</option>
+				<option value="26" name="20 x 1.75 = 406mm">20 x 1.75 = 406mm</option>
+				<option value="27" name="20 x 1 1/4 = 451mm">20 x 1 1/4 = 451mm</option>
+				<option value="28" name="17 x 1 1/4 = 369mm">17 x 1 1/4 = 369mm</option>
+				<option value="29" name="16 x 1 3/8 = 349mm">16 x 1 3/8 = 349mm</option>
+			</select>
+		</td>
+		<!-- end of wheel size selection -->
+
+		<!-- start of crank length selection -->
+		<td>
+			<select name="crank" onchange="readCrank()">
+				<option value="130">130</option>
+				<option value="135">135</option>
+				<option value="140">140</option>
+				<option value="145">145</option>
+				<option value="150">150</option>
+				<option value="155">155</option>
+				<option value="160">160</option>
+				<option value="162.5">162.5</option>
+				<option value="165">165</option>
+				<option value="167.5">167.5</option>
+				<option selected="" value="170">170</option>
+				<option value="172.5">172.5</option>
+				<option value="175">175</option>
+				<option value="177.5">177.5</option>
+				<option value="180">180</option>
+				<option value="182.5">182.5</option>
+				<option value="185">185</option>
+				<option value="190">190</option>
+				<option value="195">195</option>
+				<option value="200">200</option>
+				<option value="205">205</option>
+				<option value="210">210</option>
+				<option value="215">215</option>
+				<option value="220">220</option>
+			</select>
+		</td>
+		<!-- end of crank length selection -->
+	</tr>
+	<tr>
+		<td colspan="1">
+			<input type="button" value=" - " onclick="ringMinus('ring0')"/>
+			<input type="button" value=" + " onclick="ringPlus('ring0')"/><br/>
+			<input type="button" value="  X  " onclick="ringX('ring0')"/>
+		</td>
+		<td colspan="1">
+			<input type="button" value=" - " onclick="ringMinus('ring1')"/>
+			<input type="button" value=" + " onclick="ringPlus('ring1')"/><br/>
+			<input type="button" value="  X  " onclick="ringX('ring1')"/>
+		</td>
+		<td colspan="1">
+			<input type="button" value=" - " onclick="ringMinus('ring2')"/>
+			<input type="button" value=" + " onclick="ringPlus('ring2')"/><br/>
+			<input type="button" value="  X  " onclick="ringX('ring2')"/>
+		</td>
+		<!-- end of chainring value table -->
+	</tr>
+	<tr>
+		<td colspan="5">
+			Required Front Derailleur <a href="http://sheldonbrown.com/gloss_ca-g.html#capacity" target="_blank">Capacity</a>: 	
+			<input type="text" name="frontcap" size="2" style="border: none" readonly="readonly"/>
+		</td>
+	</tr>
+</tbody>
+</table>

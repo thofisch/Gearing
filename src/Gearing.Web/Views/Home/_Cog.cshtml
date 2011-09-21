@@ -1,0 +1,241 @@
+﻿<!-- beginning of cog value table -->
+<table style="border: 1px solid black;">
+<tbody>
+	<tr>
+		<td colspan="11">
+			<b>Cassette</b>
+		</td>
+	</tr>
+	<tr>
+		<!-- default cogs = my Mariposa -->
+		<td><input type="text" name="cog0" size="2" value="12" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog1" size="2" value="13" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog2" size="2" value="14" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog3" size="2" value="15" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog4" size="2" value="16" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog5" size="2" value="17" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog6" size="2" value="19" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog7" size="2" value="21" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog8" size="2" value="23" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog9" size="2" value="25" onchange="readCogs()" /></td>
+		<td><input type="text" name="cog10" size="2" value="999" onchange="readCogs()" /></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog0')" />
+			<input type="button" value=" + " onclick="cogPlus('cog0')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog0')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog1')" />
+			<input type="button" value=" + " onclick="cogPlus('cog1')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog1')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog2')" />
+			<input type="button" value=" + " onclick="cogPlus('cog2')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog2')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog3')" />
+			<input type="button" value=" + " onclick="cogPlus('cog3')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog3')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog4')" />
+			<input type="button" value=" + " onclick="cogPlus('cog4')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog4')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog5')" />
+			<input type="button" value=" + " onclick="cogPlus('cog5')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog5')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog6')" />
+			<input type="button" value=" + " onclick="cogPlus('cog6')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog6')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog7')" />
+			<input type="button" value=" + " onclick="cogPlus('cog7')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog7')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog8')" />
+			<input type="button" value=" + " onclick="cogPlus('cog8')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog8')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog9')" />
+			<input type="button" value=" + " onclick="cogPlus('cog9')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog9')" />
+		</td>
+		<td>
+			<input type="button" value=" - " onclick="cogMinus('cog10')" />
+			<input type="button" value=" + " onclick="cogPlus('cog10')" /><br/>
+			<input type="button" value="  X  " onclick="cogX('cog10')" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			Required Rear Derailleur <a href="http://sheldonbrown.com/gloss_ca-g.html#capacity" target="_blank">Capacity</a>: 
+			<input type="text" name="rearcap" size="2" style="border: none" readonly="readonly" />
+		</td>
+		<td colspan="6" style="text-align: right;">
+			<select name="cassette" onchange="selectCassette()">
+				<option value="0">Select a Cassette</option>
+				<option value="1">My touring bike 5 speed 13-30</option>
+				<option value="0">-----------------</option>
+				<option value="105">5 Speed Freewheel 14-18</option>
+				<option value="106">5 Speed Freewheel 14-22</option>
+				<option value="107">5 Speed Freewheel 14-24</option>
+				<option value="108">5 Speed Freewheel 14-26</option>
+				<option value="109">5 Speed Freewheel 14-28</option>
+				<option value="110">5 Speed Freewheel 14-32</option>
+				<option value="111">5 Speed Freewheel 14-34</option>
+				<option value="112">5 Speed Freewheel 13-17</option>
+				<option value="113">5 Speed Freewheel 13-18</option>
+				<option value="114">5 Speed Freewheel 13-22</option>
+				<option value="115">5 Speed Freewheel 13-24</option>
+				<option value="116">5 Speed Freewheel 13-26</option>
+				<option value="117">5 Speed Freewheel 13-28</option>
+				<option value="118">5 Speed Freewheel 13-32</option>
+				<option value="119">5 Speed Freewheel 13-34</option>
+				<option value="130">IRD 5 Speed Freewheel 13-24</option>
+				<option value="131">IRD 5 Speed Freewheel 13-28</option>
+				<option value="132">IRD 5 Speed Freewheel 13-32</option>
+				<option value="133">IRD 5 Speed Freewheel 14-28</option>
+				<option value="0">-----------------</option>
+				<option value="2">Sachs 6 Speed Freewheel 13-18</option>
+				<option value="3">Sachs 6 Speed Freewheel 13-21</option>
+				<option value="4">Sachs 6 Speed Freewheel 13-24</option>
+				<option value="5">Sachs 6 Speed Freewheel 13-26</option>
+				<option value="6">Sachs 6 Speed Freewheel 13-28</option>
+				<option value="134">IRD 6 Speed Freewheel 13-24</option>
+				<option value="135">IRD 6 Speed Freewheel 13-28</option>
+				<option value="136">IRD 6 Speed Freewheel 14-32</option>
+				<option value="137">IRD 6 Speed Freewheel 14-34</option>
+				<option value="0">-----------------</option>
+				<option value="7">Sachs 7 speed freewheel 12-19</option>
+				<option value="8">Sachs 7 speed freewheel 12-21</option>
+				<option value="9">Sachs 7 speed freewheel 13-21</option>
+				<option value="10">Sachs 7 speed freewheel 12-24</option>
+				<option value="11">Sachs 7 speed freewheel 13-24</option>
+				<option value="12">Sachs 7 speed freewheel 13-26</option>
+				<option value="13">Sachs 7 speed freewheel 12-28</option>
+				<option value="14">Sachs 7 speed freewheel 13-28</option>
+				<option value="15">Sachs 7 speed freewheel 13-30</option>
+				<option value="16">Sachs 7 speed freewheel 13-32</option>
+				<option value="17">Sunrace 7 speed freewheel 13-28</option>
+				<option value="18">Shimano 7 speed cassette HG 70 11-28</option>
+				<option value="19">Shimano 7 speed cassette HG 90 12-21</option>
+				<option value="20">Shimano 7 speed cassette HG 90 12-28</option>
+				<option value="21">Shimano 7 speed cassette HG 90 13-21</option>
+				<option value="22">Shimano 7 speed cassette HG 90 13-23</option>
+				<option value="23">Shimano 7 speed cassette HG 90 13-26</option>
+				<option value="24">Shimano 7 speed cassette HG 90 13-28</option>
+				<option value="25">Shimano 7 speed cassette HG 90 13-30</option>
+				<option value="26">Shimano 7 speed cassette HG 90 14-32</option>
+				<option value="27">Shimano 7 speed cassette HG 90 13-34</option>
+				<option value="138">IRD 7 Speed Freewheel 13-24</option>
+				<option value="139">IRD 7 Speed Freewheel 13-28</option>
+				<option value="140">IRD 7 Speed Freewheel 13-32 mega</option>
+				<option value="141">IRD 7 Speed Freewheel 13-32</option>
+				<option value="0">-----------------</option>
+				<option value="28">Sachs 8 speed freewheel 12-19</option>
+				<option value="29">Sachs 8 speed freewheel 12-21</option>
+				<option value="30">Sachs 8 speed freewheel 12-24</option>
+				<option value="31">Sachs 8 speed freewheel 12-26</option>
+				<option value="32">Sachs 8 speed freewheel 12-28</option>
+				<option value="33">Sachs 8 speed freewheel 13-28</option>
+				<option value="34">Sachs 8 speed freewheel 12-30</option>
+				<option value="35">Sachs 8 speed freewheel 13-30</option>
+				<option value="36">Sachs 8 speed freewheel 12-32</option>
+				<option value="37">Shimano Deore XT 8 Speed IG Cassette 11-28</option>
+				<option value="38">Shimano Deore XT 8 Speed IG Cassette 11-30</option>
+				<option value="39">Shimano XTR 8sp HG Cassette 12-28</option>
+				<option value="40">Shimano XTR 8sp HG Cassette 12-32</option>
+				<option value="41">Shimano Dura Ace HG 8 spd Cassette 12-21</option>
+				<option value="42">Shimano Dura Ace HG 8 spd Cassette 12-23</option>
+				<option value="43">Shimano Dura Ace HG 8 spd Cassette 12-25</option>
+				<option value="44">Shimano Dura Ace HG 8 spd Cassette 13-23</option>
+				<option value="45">Shimano Dura Ace HG 8 spd Cassette 13-26</option>
+				<option value="46">Shimano HG50 8spd Cassette 12-21</option>
+				<option value="47">Shimano HG50 8spd Cassette 12-23</option>
+				<option value="48">Shimano HG50 8spd Cassette 12-25</option>
+				<option value="49">Shimano HG50 8spd Cassette 13-26</option>
+				<option value="50">Sram 5.0 8 speed Cassette 11-32</option>
+				<option value="51">Sachs 8 speed Quartz Cassette for Sachs Freehubs 11-28</option>
+				<option value="52">Sachs 8 speed Quartz Cassette for Sachs Freehubs 12-32</option>
+				<option value="53">Campagnolo 8 Speed Cassette  12-23</option>
+				<option value="54">Campagnolo 8 Speed Cassette  13-23</option>
+				<option value="55">Campagnolo 8 Speed Cassette  13-26</option>
+				<option value="0">-----------------</option>
+				<option value="56">Sram 7.0 9 Speed Cassette 11-32</option>
+				<option value="142">Sram X5 9 Speed Cassette 11-34</option>
+				<option value="57">Shimano XTR TI 9 speed Cassette Cogs 11-30</option>
+				<option value="58">Shimano XTR TI 9 speed Cassette Cogs 12-2 </option>
+				<option value="59">Shimano XTR 9sp Mega 9 Cassette 12-34</option>
+				<option value="60">Shimano Dura Ace 9 Speed Cassette 11-21</option>
+				<option value="61">Shimano Dura Ace 9 Speed Cassette 11-23</option>
+				<option value="62">Shimano Dura Ace 9 Speed Cassette 12-21</option>
+				<option value="63">Shimano Dura Ace 9 Speed Cassette 12-23</option>
+				<option value="64">Shimano Dura Ace 9 Speed Cassette 12-25</option>
+				<option value="65">Shimano Dura Ace 9 Speed Cassette 12-27</option>
+				<option value="66">Shimano M750 9 speed Cassette 11-32</option>
+				<option value="67">Shimano M750 9 speed Cassette 12-34</option>
+				<option value="68">Shimano M750 9 speed Cassette 11-34</option>
+				<option value="69">Shimano Ultegra 9 speed Cassette 11-21</option>
+				<option value="70">Shimano Ultegra 9 speed Cassette 11-23</option>
+				<option value="71">Shimano Ultegra 9 speed Cassette 12-21</option>
+				<option value="72">Shimano Ultegra 9 speed Cassette 12-23</option>
+				<option value="73">Shimano Ultegra 9 speed Cassette 12-25</option>
+				<option value="74">Shimano Ultegra 9 speed Cassette 12-27</option>
+				<option value="75">Shimano Ultegra 9 speed Cassette 13-23</option>
+				<option value="76">Shimano Ultegra 9 speed Cassette 13-25</option>
+				<option value="77">Shimano Ultegra 9 speed Cassette 14-25</option>
+				<option value="78">Shimano HG70 9 speed Cassette 12-23</option>
+				<option value="79">Shimano HG70 9 speed Cassette 12-25</option>
+				<option value="80">Shimano HG70 9 speed Cassette 13-23</option>
+				<option value="81">Shimano HG70 9 speed Cassette 13-25</option>
+				<option value="82">Shimano HG70 9 speed Cassette 11-32</option>
+				<option value="83">Campagnolo 9 Speed Cassette 11-21</option>
+				<option value="84">Campagnolo 9 Speed Cassette 11-23</option>
+				<option value="85">Campagnolo 9 Speed Cassette 12-21</option>
+				<option value="86">Campagnolo 9 Speed Cassette 12-23</option>
+				<option value="87">Campagnolo 9 Speed Cassette 13-23</option>
+				<option value="88">Campagnolo 9 Speed Cassette 13-26</option>
+				<option value="89">Campagnolo Chorus E d 9 speed Cassette 12-21</option>
+				<option value="90">Campagnolo Chorus E d 9 speed Cassette 12-23</option>
+				<option value="91">Campagnolo Chorus E d 9 speed Cassette 13-23</option>
+				<option value="92">Campagnolo Chorus E d 9 speed Cassette 13-26</option>
+				<option value="93">Campagnolo Veloce Cassette 9 speed 12-21</option>
+				<option value="94">Campagnolo Veloce Cassette 9 speed 11-23</option>
+				<option value="95">Campagnolo Veloce Cassette 9 speed 12-23</option>
+				<option value="96">Campagnolo Veloce Cassette 9 speed 13-23</option>
+				<option value="97">Campagnolo Veloce Cassette 9 speed 13-26</option>
+				<option value="98">Campagnolo Veloce Cassette 9 speed 13-28</option>
+				<option value="0">-----------------</option>
+				<option value="99">Campagnolo 10 speed Cassette 11-21</option>
+				<option value="100">Campagnolo 10 speed Cassette 11-23</option>
+				<option selected="" value="101">Campagnolo 10 speed Cassette 12-25</option>
+				<option value="102">Campagnolo 10 speed Cassette 13-26</option>
+				<option value="103">Campagnolo 10 speed Cassette 13-29</option>
+				<option value="120">Dura Ace 10 speed Cassette 12-21</option>
+				<option value="121">Dura Ace 10 speed Cassette 11-23</option>
+				<option value="122">Dura Ace 10 speed Cassette 12-23</option>
+				<option value="123">Dura Ace 10 speed Cassette 12-25</option>
+				<option value="124">Dura Ace 10 speed Cassette 13-25</option>
+				<option value="125">Dura Ace 10 speed Cassette 12-27</option>
+				<option value="0">-----------------</option>
+				<option value="126">Campagnolo 11 speed Cassette 11-23</option>
+				<option value="127">Campagnolo 11 speed Cassette 11-25</option>
+				<option value="128">Campagnolo 11 speed Cassette 12-25</option>
+				<option value="129">Campagnolo 11 speed Cassette 12-27</option>
+			</select>
+		</td>
+	</tr>
+</tbody>
+</table>
+<!-- end of cog value table -->
