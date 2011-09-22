@@ -1,0 +1,51 @@
+namespace Gearing.Tests
+{
+	public static class WheelDatabase
+	{
+		public static readonly Wheel[] Wheels = new[]
+		{
+			new Wheel("700 X 56", "56-622", 370),
+			new Wheel("700 X 50", "50-622", 365),
+			new Wheel("700 X 44", "44-622", 354),
+			new Wheel("700 X 38", "38-622", 347),
+			new Wheel("700 X 35", "35-622", 345),
+			new Wheel("700 X 32", "32-622", 342),
+			new Wheel("700 X 28", "28-622", 336),
+			new Wheel("700 X 25", "25-622", 335),
+			new Wheel("700 X 23", "23-622", 333),
+			new Wheel("700 X 20", "20-622", 332),
+			new Wheel("27 X 1 3/8", "35-630", 345),
+			new Wheel("27 X 1 1/4", "32-630", 343),
+			new Wheel("27 X 1 1/8", "28-630", 342),
+			new Wheel("27 X 1", "25-630", 340),
+			new Wheel("26 X 2.125", "54-559", 330),
+			new Wheel("26 X 1.9", "47-559", 324),
+			new Wheel("26 X 1.5", "38-559", 312),
+			new Wheel("26 X 1.25", "32-559", 311),
+			new Wheel("26 X 1.0", "25-559", 305),
+			new Wheel("26 x 1/650C", "25-571", 311),
+			new Wheel("Tubular", "Wide", 338),
+			new Wheel("Tubular", "Narrow", 335),
+			new Wheel("26 X 1 3/8", "35-590", 330),
+			new Wheel("24", "Most", 305),
+			new Wheel("24 x 1", "25-520", 279),
+			new Wheel("20 X 1.75", "44-406", 254),
+			new Wheel("20 X 1 1/4", "28-451", 257),
+			new Wheel("18 x 1.5", "40-355", 218),
+			new Wheel("17 x 1 1/4", "28-369", 211),
+			new Wheel("16 x 1 3/8", "35-349", 204),
+			new Wheel("16 x 1.5", "37-305", 172),
+			new Wheel("650B x 40", "", 331),
+			new Wheel("650B x 36", "", 327),
+			new Wheel("650B x 33", "", 324),
+			new Wheel("650B x 30", "", 321),
+			new Wheel("26 x 1 3/8", "590mm", 330),
+			new Wheel("17 x 1 1/4", "369mm", 211),
+			new Wheel("29er x 1.9", "700x48", 358),
+			new Wheel("29er x 2.1", "700x53", 363),
+			new Wheel("29er x 2.2", "700x56", 366),
+			new Wheel("20 x 1.5\")", "406mm", 242),
+			new Wheel("700 x 30", "", 340),
+		};
+	}
+}

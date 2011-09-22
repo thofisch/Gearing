@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gearing.Web", "src\Gearing.Web\Gearing.Web.csproj", "{E5D1839E-415A-4C9F-8955-473C965E1B42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gearing.Tests", "src\Gearing.Tests\Gearing.Tests.csproj", "{2EA3430F-3ABD-417C-AD92-C63AD0451DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{E5D1839E-415A-4C9F-8955-473C965E1B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5D1839E-415A-4C9F-8955-473C965E1B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5D1839E-415A-4C9F-8955-473C965E1B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA3430F-3ABD-417C-AD92-C63AD0451DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA3430F-3ABD-417C-AD92-C63AD0451DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA3430F-3ABD-417C-AD92-C63AD0451DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA3430F-3ABD-417C-AD92-C63AD0451DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
