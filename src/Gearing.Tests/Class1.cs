@@ -19,7 +19,7 @@ namespace Gearing.Tests
 
 		public void CalcGears(Wheel wheel, Crank crank, Chainrings chainrings, Cassette cassette)
 		{
-			var wheelSize = wheel.Radius * 2 / 25.4;	// to diameter inch
+			var wheelSize = wheel.Radius * 2 / 25.4; // to diameter inch
 			var radiusRatio = wheel.Radius / crank.Length;
 			var numRings = chainrings.Sprockets.Length;
 			var numCogs = cassette.Sprockets.Length;
@@ -31,9 +31,9 @@ namespace Gearing.Tests
 			var ring = new int[numRings,numCogs];
 			var ratio = new double[numRings,numCogs];
 			var rollout = new double[numRings,numCogs];
-			var speed = new double[numRings, numCogs];
-			var lspeed = new double[numRings, numCogs];
-			var hspeed = new double[numRings, numCogs];
+			var speed = new double[numRings,numCogs];
+			var lspeed = new double[numRings,numCogs];
+			var hspeed = new double[numRings,numCogs];
 
 			const int RPM = 90;
 
@@ -41,7 +41,7 @@ namespace Gearing.Tests
 			{
 				for(var i = 0; i<numCogs; i++)
 				{
-					gear[j,i] = (rings[j] / cogs[i]) * numCogs - i;
+					gear[j, i] = (rings[j] / cogs[i]) * numCogs - i;
 					// inchgears
 					value[j, i] = wheelSize * rings[j] / cogs[i];
 
@@ -61,9 +61,25 @@ namespace Gearing.Tests
 					//lspeed[j, i] = (((rollout[j, i] * lRPM) * 60) / 12) / 5280;
 					//hspeed[j, i] = (((rollout[j, i] * hRPM) * 60) / 12) / 5280;
 
-					Console.WriteLine("{0} x {1} = {2}", rings[j], cogs[i], speed[j, i].ToString("0.0"));
 					Console.WriteLine();
 				}
+			}
+
+			Console.WriteLine("Speed ranges");
+
+			for(var i = 0; i<numRings; i++)
+			{
+				var max = double.MinValue;
+				var min = double.MaxValue;
+
+				for(var j = 0; j<numCogs; j++)
+				{
+					var s = speed[i, j];
+					min = Math.Min(s, min);
+					max = Math.Max(s, max);
+				}
+
+				Console.WriteLine("{0}: {1} - {2}", rings[i], min, max);
 			}
 		}
 	}
